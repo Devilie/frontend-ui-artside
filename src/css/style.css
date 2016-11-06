@@ -1,0 +1,99 @@
+
+
+html {
+	height: 100%;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 11px;
+    font-family: verdana, sans-serif;
+	width: 100%;
+	height: 100%;
+	background-image: url(images/bg_body.jpg);
+}
+.wrapper {
+	width: 1024px;
+	margin: 0 auto;
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+@font-face {
+    font-family: "DIN";
+    src: url(font/DIN-LightAlternate.ttf);
+   }
+@font-face {
+    font-family: "dincyr";
+    src: url(font/dincyr-regular.ttf);
+}
+h2, .phone, .footer {
+	font-family: "DIN", sans-serif; 
+  font-size: 18px;
+}
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+	height: 150px;
+    padding-top: 45px;
+	white-space: nowrap;
+}
+a.logo{
+    width: 102px;
+    height: 63px;
+}
+.logo img{
+	width: inherit;
+	height: inherit;
+}
+div.phone span {
+    left: 880px;
+    position: relative;
+    display: block; 
+}
+
+/* Middle
+-----------------------------------------------------------------------------*/
+.middle {
+	width: 100%;
+	padding: 0 0 100px;
+	position: relative;
+}
+ .middle:after {
+	display: table;
+	clear: both;
+	content: '';
+} 
+.container {
+	width: 1024px;
+	overflow: hidden;
+	position: relative;
+    margin-bottom: 10px;
+}
+.content {
+	padding: 0 0 0 320px;
+    height: auto;
+}
+
+
+/* Left Sidebar
+-----------------------------------------------------------------------------*/
+.left-sidebar {
+	float: left;
+	width: 200px;
+	position: relative;
+	
+}
+
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	width: 1024px;
+	margin: -100px auto 0;
+	height: 100px;
+	border-top: 1px solid;
+	position: relative;
+}
