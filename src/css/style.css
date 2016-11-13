@@ -8,7 +8,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
     box-sizing: border-box;
 }
 body {
-	font-family: Verdana, Arial, sans-serif;
+	font-family: Verdana, sans-serif;
+    font-size: 11px;
 	width: 100%;
 	height: 100%;
     min-width: 1024px;
@@ -22,30 +23,34 @@ body {
 	min-height: 100%;
 	height: auto !important;
 }
+h1, h2, .menu-item {
+    font-family: Din-reg, Verdana, sans-serif;
+}
 h1, h2 {
     color: #646464;
     margin-bottom: 10px;
     text-transform: uppercase;
-    font-family: DIN, Verdana, sans-serif;
     font-size: 18px;
     font-weight: 500;
 }
-p, .footer {
-    font-size: 11px;
-}
+
 strong {
     font-weight:bold;
 }
-/* something wrong, i can't use it*/
 @font-face {
     font-family: "DIN";
-    src: url(font/DIN-LightAlternate.ttf);
+    src: url(../font/DIN-LightAlternate.ttf);
+    font-style: normal;
+   }
+@font-face {
+    font-family: "Din-reg";
+    src: url(../font/dincyr-regular.ttf);
     font-style: normal;
    }
 /* Header
 -----------------------------------------------------------------------------*/
 .header {
-	height: 150px;
+	height: 200px;
     padding-top: 45px;
 	white-space: nowrap;
 }
@@ -57,11 +62,12 @@ a.logo{
 	width: inherit;
 	height: inherit;
 }
-div.phone {
+.phone {
     left: 880px;
     top: -50px;
     width: 100px;
     position: relative;
+    font-family: DIN, Verdana, sans-serif;
 }
 .phone span {
     display: block;
@@ -70,9 +76,8 @@ div.phone {
     box-sizing: border-box;
 }
 .phone span:last-child {
-    font-size: 25px;
+    font-size: 28px;
     width: 140px;
-    font-family: DIN, Verdana, sans-serif;
 }
 .phone_num {
     text-decoration: none;
@@ -108,51 +113,40 @@ div.phone {
 .article p {
     margin-top: 10px;
 }
-.article section{
-    margin: 20px 0;
-    overflow: visible;
-}
 .about {
+    margin: 20px 10px 20px 0;
     display: inline-block;
-    width: 220px;
-    margin-right: 20px;
+    width: 230px;
     vertical-align: top;
     box-sizing: border-box;
-    white-space: nowrap;
-}
-.about:last-of-type-of-type {
-    overflow: visible;
 }
 .about li {
-    margin: 16px 0;
-    overflow: visible;
-}
-.about span {
-    display: inline-block;
-    vertical-align: top;
+    margin-bottom: 18px;
     overflow: hidden;
+    display: block;
+    white-space: nowrap;
+}
+.about_name{
+    white-space: normal;
+    vertical-align: top;
+    display: inline-block;
+    width: 64%;
 
 }
 .about .about_img {
     display: inline-block;
     background-color: #363636;
+    margin-right: 10px;
     width: 78px;
     height: 78px;
     overflow: hidden;
     text-align: center;
-    
+    line-height: 74px;
 }
 .about img {
-    width: auto;
-    height: 78px;
+    width: 78px;
+    height: auto;
     vertical-align: middle !important;
-}
-.about p {
-    display: inline-block;
-    margin-top: 0px;
-    margin-left: 4px;
-	overflow: hidden;
-  	white-space: pre-line;
 }
 /* Left Sidebar
 -----------------------------------------------------------------------------*/
@@ -161,27 +155,27 @@ div.phone {
     margin-left: -100%;
 	position: relative;
     display: inline-block;
-    vertical-align: top;
-    box-sizing: border-box;
-    text-transform: uppercase;
-	font-family: DIN, Verdana, sans-serif;
-    font-size: 40px;
-    font-weight: 300;    
+
 }
-.left-sidebar .menu-item a {
+.menu-item a {
     text-decoration: none;
 	color: #363636;
 }
-.left-sidebar .menu-item a:hover {
+ .menu-item a:hover {
     background-color: #707070;
     color: #fff;
 }
-.left-sidebar .menu-item a:active {
+.menu-item a:active {
     background-color: #707070;
     color: #fff;
 }
 .mainmenu  .menu-item{
 	overflow: hidden;
+    text-transform: uppercase;
+    font-size:40px;
+    line-height: 38px;
+    display: inline-block;
+    box-sizing: border-box;
 }
 
 /* Footer
@@ -192,7 +186,7 @@ div.phone {
 	height: 100px;
 	border-top: 1px solid rgba(112, 112, 112, 0.47);
 	position: relative;
-
+    font-family: Tahoma, sans-serif;
 }
 .footer div {
     display: inline-block;
@@ -207,6 +201,7 @@ div.phone {
 }
 
 .footer p {
+    margin-left: 10px;
     margin-bottom: 4px;
 }
 
