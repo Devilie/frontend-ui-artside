@@ -21,7 +21,6 @@ body {
 	width: 1000px;
 	margin: 0 auto;
 	min-height: 100%;
-	height: auto !important;
 }
 h1, h2, .menu-item {
     font-family: Din-reg, Verdana, sans-serif;
@@ -62,25 +61,23 @@ a.logo{
 	width: inherit;
 	height: inherit;
 }
-.phone {
+.phone_num {
     left: 880px;
     top: -50px;
     width: 100px;
     position: relative;
+    text-decoration: none;
     font-family: DIN, Verdana, sans-serif;
-}
-.phone span {
     display: block;
     font-size: 18px;
 	color: #707070;
     box-sizing: border-box;
 }
-.phone span:last-child {
+
+.phone_num span:last-child {
+    display: block;
     font-size: 28px;
     width: 140px;
-}
-.phone_num {
-    text-decoration: none;
 }
 
 /* Middle
@@ -112,6 +109,7 @@ a.logo{
 }
 .article p {
     margin-top: 10px;
+    line-height: 16px;
 }
 .about {
     margin: 20px 10px 20px 0;
@@ -146,7 +144,7 @@ a.logo{
 .about img {
     width: 78px;
     height: auto;
-    vertical-align: middle !important;
+    vertical-align: middle;
 }
 /* Left Sidebar
 -----------------------------------------------------------------------------*/
